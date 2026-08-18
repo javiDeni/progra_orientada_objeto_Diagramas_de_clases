@@ -1,0 +1,5 @@
+@startuml dependencia 
+
+alumno ..> impresora : usa
+
+@enduml 
