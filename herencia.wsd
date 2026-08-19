@@ -1,0 +1,6 @@
+@startuml herencia 
+
+Vehiculo <|-- Automovil
+Vehiculo <|-- Moto
+
+@enduml 

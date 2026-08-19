@@ -1,0 +1,19 @@
+@startuml LibroPagina
+
+class Pagina {
+    
+    - nimero : int
+    - contenido : str 
+    + formatear(): str
+}
+
+class Libro {
+    - titulo : str
+    - lista_paginas : List<pagina>
+    + agregar_pagina(Pagina)
+    + mostrar_paginas()
+
+}
+Libro *-- Pagina
+
+@enduml 

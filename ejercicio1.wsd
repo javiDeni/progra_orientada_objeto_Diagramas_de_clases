@@ -1,0 +1,17 @@
+@startuml Ejercicio1Agregacion
+
+class Departamento {
+    
+    - nombre : str
+    - empleados : list<Empleado> 
+    + agregar_empleados(empleado : Empleado) 
+    + mostrar_empleados() : void
+}
+
+class Empleado {
+    - nombre : str
+    - id_empleado : int 
+}
+Departamento "1 " o-- "1..n" Empleado
+
+@enduml 
